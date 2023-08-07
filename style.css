@@ -26,9 +26,32 @@ html, body{
     text-decoration: none;
     color: black;
 }
-.nav-btn{
-    margin-right: 100px;
+#mobile_nav-btn{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 130px;
 }
+.burger{
+    background: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    margin-right: 40px;
+    height: 35px;
+    display: none;
+}
+@media screen and (max-width: 1105px) {
+    .burger{
+        display: block;
+    }  
+    .nav-btn{
+        display: none;
+    }
+}
+.nav-btn{
+    margin-right: 60px;
+}
+
+
 .nav-btn ul{
     list-style-type: none;
     display: flex;
